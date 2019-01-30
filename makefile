@@ -1,10 +1,8 @@
-configure :
-    haii i am done
 CC = gcc
 FILES = Multiplay.c seatest.c
 OUT_EXE = Multiplay
 
-make install: $(FILES)
+makefile: $(FILES)
 	$(CC) -o $(OUT_EXE) $(FILES) -I ../../src
 
 clean:
