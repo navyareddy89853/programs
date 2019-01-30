@@ -7,5 +7,7 @@ makefile: $(FILES)
 
 clean:
 	rm -f *.o core
+install:
+	./Multiplay
 
 rebuild: clean build
