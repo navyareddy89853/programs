@@ -1,11 +1,9 @@
-CC = gcc
-FILES = Multiplay.c seatest.c
-OUT_EXE = Multiplay
-
-make install: $(FILES)
-	$(CC) -o $(OUT_EXE) $(FILES) -I ../../src
-
-clean:
-	rm -f *.o core
-
-rebuild: clean build
+sum: main.o
+	cc -o sum Multiplay.c seatest.c
+main.o : Multiplay.c
+	cc -c Multiplay.c
+clean :	
+	rm -f sum main.o
+install :
+	./sum
+	
