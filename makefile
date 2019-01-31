@@ -6,4 +6,3 @@ clean :
 	rm -f sum main.o
 install :
 	./sum
-	
